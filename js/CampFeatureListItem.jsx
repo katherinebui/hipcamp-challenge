@@ -1,5 +1,6 @@
 import React from 'react';
 import css from '../public/style.css';
+import { Link } from 'react-router-dom';
 
 class CampFeatureListItem extends React.Component {
   renderImage() {
@@ -13,7 +14,7 @@ class CampFeatureListItem extends React.Component {
   render() {
     return (
       <div className="cf-list-item">
-        {this.props.title}
+        <Link to={`/${this.props.title}`}>{this.props.title}</Link>
         {this.renderImage()}
       </div>
     );
