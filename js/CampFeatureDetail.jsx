@@ -1,8 +1,8 @@
 import React from 'react';
 
 const CampFeatureDetail = (props: { feature: Feature }) => {
-  // const { title, presence, subfeatures } = props.feature;
-  return <div className="details">{feature}</div>;
+  const { title, presence, subfeatures } = props.feature;
+  return <div className="details">{console.log(title)}</div>;
   // return <h1>{props.match.params.feature}</h1>;
 };
 

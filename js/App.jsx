@@ -19,7 +19,6 @@ const App = () => (
             const selectedFeature = FEATURES.find(
               feature => props.match.params.feature.toLowerCase() === feature.title.toLowerCase()
             );
-            console.log(selectedFeature);
             return <CampFeatureDetail feature={selectedFeature} {...props} />;
           }}
         />
