@@ -3,14 +3,15 @@ const webpack = require('webpack');
 
 module.exports = {
   context: __dirname,
-  entry: "./js/CampFeaturesList.js",
-  devtool: "cheap-eval-source-map",
+  entry: './js/App.jsx',
+  devtool: 'cheap-eval-source-map',
   output: {
     path: path.join(__dirname, 'public'),
     filename: 'bundle.js'
   },
   devServer: {
     publicPath: '/public/',
+    historyApiFallback: true,
     hot: true
   },
   resolve: {
@@ -23,16 +24,16 @@ module.exports = {
   },
   module: {
     rules: [
-    {
-      enforce: 'pre',
-      test: /\.jsx?$/,
-      exclude: /node_modules/
-    },
-    {
-      test: /\.jsx?$/,
-      loader: 'babel-loader',
-      query: { compact: true }
-    }
+      {
+        enforce: 'pre',
+        test: /\.jsx?$/,
+        exclude: /node_modules/
+      },
+      {
+        test: /\.jsx?$/,
+        loader: 'babel-loader',
+        query: { compact: true }
+      }
     ]
   }
 };
