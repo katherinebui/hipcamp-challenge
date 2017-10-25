@@ -1,7 +1,7 @@
-import React from 'react';
 import FEATURES from '../camp_features';
 import CampFeatureListItem from './CampFeatureListItem';
 import Header from './Header';
+import React from 'react';
 
 const CampFeatureList = () => (
   <div className="cf-list">

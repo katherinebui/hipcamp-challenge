@@ -5,8 +5,7 @@
   "scripts": {
     "build": "webpack -p",
     "watch": "webpack --watch",
-    "start": "./node_modules/.bin/webpack-dev-server --content-base public/ --hot --inline",
-    "flow": "flow"
+    "start": "./node_modules/.bin/webpack-dev-server --content-base public/ --hot --inline"
   },
   "author": "Katherine Bui",
   "license": "ISC",
@@ -28,9 +27,5 @@
     "webpack": "^3.8.1",
     "webpack-dev-server": "2.4.5"
   },
-  "dependencies": {
-    "flow": "^0.2.3",
-    "init": "^0.1.2",
-    "prop-types": "^15.6.0"
-  }
+  "dependencies": {}
 }

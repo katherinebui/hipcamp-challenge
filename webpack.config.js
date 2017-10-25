@@ -3,7 +3,7 @@ const webpack = require('webpack');
 
 module.exports = {
   context: __dirname,
-  entry: './js/App.jsx',
+  entry: './js/index.js',
   devtool: 'cheap-eval-source-map',
   output: {
     path: path.join(__dirname, 'public'),
