@@ -29,7 +29,7 @@ class CampFeatureListItem extends React.Component {
 
   renderDetail() {
     if (this.state.active) {
-      return <CampFeatureDetail feature={this.props} />;
+      return <CampFeatureDetail features={this.props} />;
     }
   }
 
@@ -38,6 +38,7 @@ class CampFeatureListItem extends React.Component {
       <div className="cf-list-item">
         {this.renderImage()}
         <button
+          id="button"
           onClick={() => {
             this.handleClick();
           }}
@@ -51,5 +52,3 @@ class CampFeatureListItem extends React.Component {
 }
 
 export default CampFeatureListItem;
-
-// {!this.state.active && <CampFeatureDetail />}

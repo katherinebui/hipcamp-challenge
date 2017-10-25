@@ -6,7 +6,7 @@ import React from 'react';
 const CampFeatureList = () => (
   <div className="cf-list">
     <Header />
-    {FEATURES.map(feature => <CampFeatureListItem key={feature.title} {...feature} />)}{' '}
+    {FEATURES.map(feature => <CampFeatureListItem key={feature.title} {...feature} />)}
   </div>
 );
 

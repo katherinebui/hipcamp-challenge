@@ -4,13 +4,25 @@ import CampFeaturesList from './CampFeaturesList';
 import CampFeatureDetail from './CampFeatureDetail';
 import FEATURES from '../camp_features';
 
-const NotFound = () => <h1>404 Not found</h1>;
-
 class App extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      features: []
+    };
+  }
+
+  componentWillMount() {
+    this.setState({
+      features: FEATURES
+    });
+  }
+
   render() {
     return (
       <div className="app">
-        <CampFeaturesList />
+        <CampFeaturesList features={this.state.features} />
       </div>
     );
   }
