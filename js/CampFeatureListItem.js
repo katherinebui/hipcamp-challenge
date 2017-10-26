@@ -29,7 +29,7 @@ class CampFeatureListItem extends React.Component {
 
   renderDetail() {
     if (this.state.active) {
-      return <CampFeatureDetail features={this.props} />;
+      return <CampFeatureDetail feature={this.props} />;
     }
   }
 

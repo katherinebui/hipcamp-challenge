@@ -13,7 +13,7 @@ class App extends React.Component {
     };
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.setState({
       features: FEATURES
     });
