@@ -3,19 +3,25 @@ import App from './App';
 import Header from './Header';
 import React from 'react';
 
-const CampFeatureList = props => {
-  const campFeature = props.features.map(feature => {
+class CampFeatureList extends React.Component {
+  render() {
+  const campFeature = this.props.features.map((feature, index) => {
     return (
-      <li>
-        <CampFeatureListItem key={feature.title} {...feature} />
-      </li>
+      <ul>
+        <li key={index}>
+          <CampFeatureListItem {...feature} />
+        </li>
+      </ul>
     );
   });
-  return (
-    <div className="list">
-      <Header />
-      {campFeature}
-    </div>
-  );
-};
+
+    return (
+      <div className="list">
+        <Header />
+        {campFeature}
+      </div>
+    );
+  }
+}
+
 export default CampFeatureList;

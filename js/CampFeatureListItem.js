@@ -30,9 +30,7 @@ class CampFeatureListItem extends React.Component {
   renderDetail() {
     if (this.state.active) {
       return (
-        <ul>
-          <CampFeatureDetail subfeatures={this.props.subfeatures} />
-        </ul>
+        <CampFeatureDetail subfeatures={this.props.subfeatures} />
       );
     }
   }

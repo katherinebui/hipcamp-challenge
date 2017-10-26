@@ -9,10 +9,12 @@ class CampFeatureDetail extends React.Component {
         {this.props.subfeatures.length === 0 ? (
           <b id="noSF">No subfeatures</b>
         ) : (
-          this.props.subfeatures.map(subf => {
+          this.props.subfeatures.map((subf, index) => {
             return (
               <ul>
-                <CampFeatureListItem key={subf.title} {...subf} />
+                <li key={index} >
+                  <CampFeatureListItem {...subf} />
+                </li>
               </ul>
             );
           })

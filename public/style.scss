@@ -16,9 +16,6 @@ li {
   list-style-type: none;
 }
 
-#noSF {
-  font: 200 15px/1.5 sans-serif;
-}
 
 button {
   font-size: 15px;
@@ -32,5 +29,9 @@ button {
 
 button:hover {
   background-color: #ccc;
+}
+
+#noSF {
+  font: 200 15px/1.5 sans-serif;
 }
 
