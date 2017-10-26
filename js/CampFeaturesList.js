@@ -7,18 +7,16 @@ class CampFeatureList extends React.Component {
   render() {
   const campFeature = this.props.features.map((feature, index) => {
     return (
-      <ul>
-        <li key={index}>
-          <CampFeatureListItem {...feature} />
-        </li>
-      </ul>
+      <li key={index}><CampFeatureListItem {...feature} /></li>
     );
   });
 
     return (
       <div className="list">
         <Header />
-        {campFeature}
+          <ul>
+            {campFeature}
+          </ul>
       </div>
     );
   }
