@@ -1,0 +1,36 @@
+img {
+  width: 15px;
+  height: 15px;
+}
+
+div {
+  width: 250px;
+  margin-left: 40px;
+}
+
+h2 {
+  font: 200 20px/1.5 sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+#noSF {
+  font: 200 15px/1.5 sans-serif;
+}
+
+button {
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 15px;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+

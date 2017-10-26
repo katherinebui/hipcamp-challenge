@@ -5,12 +5,16 @@ import React from 'react';
 
 const CampFeatureList = props => {
   const campFeature = props.features.map(feature => {
-    return <CampFeatureListItem key={feature.title} {...feature} />;
+    return (
+      <li>
+        <CampFeatureListItem key={feature.title} {...feature} />
+      </li>
+    );
   });
   return (
-    <div>
+    <div className="list">
       <Header />
-      <ul className="list">{campFeature}</ul>
+      {campFeature}
     </div>
   );
 };

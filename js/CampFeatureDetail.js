@@ -7,7 +7,7 @@ class CampFeatureDetail extends React.Component {
     return (
       <div className="details">
         {this.props.subfeatures.length === 0 ? (
-          <h3>No Subfeatures</h3>
+          <b id="noSF">No subfeatures</b>
         ) : (
           this.props.subfeatures.map(subf => {
             return (

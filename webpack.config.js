@@ -35,8 +35,8 @@ module.exports = {
         query: { compact: true }
       },
       {
-        test: /\.css$/,
-        use: 'css-loader'
+        test: /\.scss$/,
+        loaders: ['style-loader', 'css-loader', 'sass-loader']
       }
     ]
   }

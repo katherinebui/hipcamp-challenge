@@ -1,7 +1,7 @@
 import React from 'react';
-import css from '../public/style.css';
 import { Link } from 'react-router-dom';
 import CampFeatureDetail from './CampFeatureDetail';
+import style from '../public/style.scss';
 
 class CampFeatureListItem extends React.Component {
   constructor() {
@@ -29,22 +29,26 @@ class CampFeatureListItem extends React.Component {
 
   renderDetail() {
     if (this.state.active) {
-      return <CampFeatureDetail subfeatures={this.props.subfeatures} />;
+      return (
+        <ul>
+          <CampFeatureDetail subfeatures={this.props.subfeatures} />
+        </ul>
+      );
     }
   }
 
   render() {
     return (
       <div className="cf-list-item">
-        {this.renderImage()}
         <button
-          id="button"
+          className="button"
           onClick={() => {
             this.handleClick();
           }}
         >
           {this.props.title}
         </button>
+        {this.renderImage()}
         {this.renderDetail()}
       </div>
     );
