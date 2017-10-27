@@ -2,6 +2,7 @@ import CampFeatureListItem from './CampFeatureListItem';
 import App from './App';
 import Header from './Header';
 import React from 'react';
+import { array, boolean }from 'prop-types';
 
 class CampFeatureList extends React.Component {
   render() {
@@ -21,5 +22,9 @@ class CampFeatureList extends React.Component {
     );
   }
 }
+
+CampFeatureList.propTypes = {
+  features: array.isRequired
+};
 
 export default CampFeatureList;

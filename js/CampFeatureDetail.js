@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import CampFeatureListItem from './CampFeatureListItem';
+import { array }from 'prop-types';
 
 class CampFeatureDetail extends React.Component {
   render() {
@@ -18,5 +19,9 @@ class CampFeatureDetail extends React.Component {
       )
     }
 }
+
+CampFeatureDetail.propTypes = {
+  subfeatures: array.isRequired
+};
 
 export default CampFeatureDetail;
