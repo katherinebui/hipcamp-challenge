@@ -42,8 +42,7 @@ class CampFeatureListItem extends React.Component {
           className="button"
           onClick={() => {
             this.handleClick();
-          }}
-        >
+          }}>
           {this.props.title}
         </button>
         {this.renderImage()}
