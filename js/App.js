@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import CampFeaturesList from './CampFeaturesList';
 import CampFeatureDetail from './CampFeatureDetail';
 import FEATURES from '../camp_features';
+import { array }from 'prop-types';
 
 class App extends React.Component {
   constructor() {
@@ -27,5 +28,9 @@ class App extends React.Component {
     );
   }
 }
+
+App.propTypes = {
+  features: array
+};
 
 export default App;
